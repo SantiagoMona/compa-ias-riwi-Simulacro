@@ -1,0 +1,27 @@
+<table class="table table-striped">
+     <thead>
+        <th># id</th>
+        <th>Logo</th>
+        <th>NIT</th>
+        <th>Nombre</th>
+        <th>Direccion</th>
+        <th>Descripcion</th>
+        <th>autor</th>
+    </thead>
+    </thead>
+    <tbody>
+       <tr>
+                <td>@Model.Id</td>
+                <td><img src="@Model.Logo" style="width: 100%;"> </td>
+                <td>@Model.Nit</td>
+                <td>@Model.Name</td>
+                <td>@Model.Address</td>
+                <td>@Model.Description</td>
+                <td>@Model.LegalRepresentative</td>
+       </tr>
+    </tbody>
+</table>
+
+<a asp-controller="Sectors" asp-action="Index"> 
+    <button class="btn btn-success" type="submit">volver</button>
+</a>

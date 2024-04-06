@@ -1,0 +1,26 @@
+@model Sector
+
+<div class="row">
+    <div class="col-md-4">
+        <form aps-action="Create" method="post">
+           
+            <div class="mb-3">
+                <label for="" class="form-label">Nombre</label>
+                <input  class="form-control" asp-for="Name">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Descripcion</label>
+                <input  class="form-control" asp-for="Description">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">autor</label>
+                <input  class="form-control" asp-for="Author">
+            </div>
+
+            
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+@model Company;
+
+<div class="row">
+    <div class="mb-3">
+
+        <form asp-action="Edit" asp-controller="Companies">
+            <div class="mb-3">
+                <label for="" class="form-label">Nombre</label>
+                <input  class="form-control" asp-for="@Model.Name">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">URL logo</label>
+                <input  class="form-control" asp-for="@Model.Logo">
+            </div>
+            <div>
+                <label for="" class="form-label">NIT</label>
+                <input  class="form-control" asp-for="@Model.Nit">
+            </div>
+            <div>
+                <label for="" class="form-label">Direccion</label>
+                <input  class="form-control" asp-for="@Model.Address">
+            </div>
+            <div>
+                <label for="" class="form-label">Descripcion</label>
+                <input  class="form-control" asp-for="@Model.Description">
+            </div>
+            <div>
+                <label for="" class="form-label">Representante Legal</label>
+                <input  class="form-control" asp-for="@Model.LegalRepresentative">
+            </div>
+            
+            <button type="submit">EDITAR</button>
+        </form>
+    </div>
+
+</div>

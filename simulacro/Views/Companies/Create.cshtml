@@ -1,0 +1,41 @@
+@model Company
+
+<div class="row">
+    <div class="col-md-4">
+        <form aps-action="Create" method="post">
+           
+            <div class="mb-3">
+                <label for="" class="form-label">Nombre</label>
+                <input  class="form-control" asp-for="Name">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Nit</label>
+                <input  class="form-control" asp-for="Nit">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">direccion</label>
+                <input  class="form-control" asp-for="Address">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">dESCRIPCION</label>
+                <input  class="form-control" asp-for="Description">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">URL logo</label>
+                <input  class="form-control" asp-for="Logo">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Numero</label>
+                <input  class="form-control" asp-for="Phone">
+            </div>  
+            <div class="mb-3">
+                <label for="" class="form-label">Representante legal</label>
+                <input  class="form-control" asp-for="LegalRepresentative">
+            </div>    
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</div>
